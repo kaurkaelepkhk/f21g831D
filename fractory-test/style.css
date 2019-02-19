@@ -1,0 +1,142 @@
+/* CVI fonts*/
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url(Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url(Gilroy-ExtraBold.otf);
+}
+
+/* Main page styles */
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #F9423A;
+    max-width: 100%;
+    color: #FFF;
+    font-family: 'GilroyLight';
+    margin: 0;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    font-family: 'GilroyBold';
+    font-style: normal;
+    font-size: 12vw;
+    color: #231F20;
+    position: absolute;
+    white-space: nowrap;
+    max-width: 525px;
+}
+
+h2 {
+    position: relative;
+    font-weight: 300;
+}
+
+/* Containers */
+
+.container {
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+.flex-container {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-container img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    margin-right: 80px;
+    margin-top: 40px;
+    display: none;
+}
+
+/* White Fractory logo*/
+
+.logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+/* CTA button */
+
+button {
+    font-family: 'GilroyBold';
+    background-color: #0072CE;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    color: #FFF;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* Logo icons under CTA */
+
+div.container > img:nth-child(6) {
+    display: block;
+    width: 250px; /* width of button */
+    height: auto;
+    padding: 25px 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .flex-container img {
+        display: none;
+    }
+    .sub {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-container img {
+        display: block;
+    }
+    .container {
+        margin: 25px 50px;
+    }
+    .sub {
+        width: 50%;
+    }
+}
+
+@media (min-width: 575px) {
+    .container {
+        margin: 25px 50px;
+    }
+    h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 575px) {
+    .sub {
+        width: 100%;
+    }
+    h1 {
+        margin: 65px 0;
+    }
+}
